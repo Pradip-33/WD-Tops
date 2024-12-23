@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Loader</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .loader {
+            position: relative;
+            height: 200px;
+            width: 200px;
+        }
+
+        .child1 {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            border: 2px solid greenyellow;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .child2 {
+            height: 190px;
+            width: 190px;
+            border-radius: 50%;
+            border: 20px solid rgb(92, 47, 255);
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            animation: rotate 5s linear infinite;
+
+            
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <div class="child1"></div>
+        <div class="child2"></div>
+    </div>
+</body>
+</html>

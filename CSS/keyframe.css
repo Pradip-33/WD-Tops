@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(0, 195, 255, 0.493);
+}
+.shape{
+    height: 100px;
+    width: 100px;
+    border: 5px solid purple;
+    background-color: blanchedalmond;
+    border-radius: 100px 0px 100px 0px;
+    position: relative;
+    animation-name: rotate-center;
+    animation-duration: 2s;
+    animation-name: move;
+    animation-duration: 10s;
+}
+@keyframes move {
+    0%{background-color: black;
+        top: 0px;
+        left: 0px;
+    }
+    25%{background-color: blueviolet;
+        top: 500px;
+        left: 1000px;
+    }
+    50%{background-color: pink;
+        top: 300px;
+        left: 200px;
+    }
+    75%{background-color: olive;
+        top: 100px;
+        left: 500px;
+    }
+    100%{background-color: rgb(255, 219, 16);
+        top: 150px;
+        left: 250px;
+    }
+    
+}
+ @-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  
+  

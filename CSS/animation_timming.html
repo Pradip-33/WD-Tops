@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timming</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div{
+        height: 50px;
+        width: 100px;
+        background-color: aqua;
+        border: 2px solid;
+        position: relative;
+        margin: 5px;
+        animation-name: move;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+      }
+     @keyframes move {
+        from{
+          left: 0;
+        }
+        to{
+         left: 500px;
+        }
+        
+      }
+      .block1{
+        animation-timing-function: linear;
+
+      }
+      .block2{
+        animation-timing-function: ease;
+      }
+      .block3{
+        animation-timing-function: ease-in;
+      }
+      .block4{
+        animation-timing-function: ease-out;
+      }
+      .block5{
+        animation-timing-function: ease-in-out;
+      }
+    </style>
+
+  
+</head>
+<body>
+    <div class="block1">linear</div>
+    <div class="block2">ease</div>
+    <div class="block3">ease-in</div>
+    <div class="block4">ease-out</div>
+    <div class="block5">ease-in-out</div>
+</body>
+</html>
