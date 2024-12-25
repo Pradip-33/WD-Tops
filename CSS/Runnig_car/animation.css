@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.background{
+    height: 100vh;
+    width: 100%;
+    background-image: url(background_with_road.jpg);    
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+}
+.car{
+    height: 100%;
+    width: 100%;
+   
+    background-position: center;
+    position: absolute;
+    bottom: 280px;
+}
+.wheel1{
+    
+    position: absolute;
+    animation-name: wheel;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    left: 750px;
+    bottom:-280Px;
+}
+.wheel2{
+    position: absolute;
+    animation-name: wheel;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    left: 220px;
+    bottom:-280Px;
+}
+@keyframes wheel {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}

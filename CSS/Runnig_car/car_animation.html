@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Car Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        .background {
+            height: 100vh;
+            width: 100%;
+            background-image: url(background_with_road.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .car {
+            width: 300px;
+            position: absolute;
+            bottom: 100px;
+            animation: moveCar 5s linear infinite ;
+        }
+
+        .wheel {
+            position: absolute;
+            animation: wheel-spin 0.5s linear infinite;
+        }
+
+        .wheel1 {
+            left: 260px;
+            bottom: 30px;
+        }
+
+        .wheel2 {
+            left: 70px;
+            bottom: 30px;
+        }
+
+        @keyframes moveCar {
+            0% {
+                left: 0%;
+           
+            }
+            25% {
+                left: 100%; 
+              
+            }
+            50% {
+
+                transform: rotate3d(0, 1, 0, 180deg);
+            }
+            75% {
+                left: -100px; 
+               
+            }
+            100% {
+                left: -200px; 
+            
+            }
+        }
+
+        @keyframes wheel-spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="car">
+            <img src="sports_car.png" alt="Car" width="700px">
+            <div class="wheel wheel1">
+                <img src="wheel.png" alt="Front Wheel" height="60px" width="60px">
+            </div>
+            <div class="wheel wheel2">
+                <img src="wheel.png" alt="Back Wheel" height="60px" width="60px">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
