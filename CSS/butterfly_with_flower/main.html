@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>self_task</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .background{
+            height: 100vh;
+            width: auto;
+            background-image: url(background.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+        .birds{
+            background-repeat: no-repeat;
+            position: absolute;
+            animation-name: birds;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-duration: 10s;
+        }
+        .birds1{
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 150px;
+            animation-name: birds;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-duration: 10s;
+        }
+        .birds2{
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 300px;
+            animation-name: birds;
+            animation-timing-function: ease-in-out  ;
+            animation-iteration-count: infinite;
+            animation-duration: 10s;
+        }
+        .dog{
+            background-repeat: no-repeat;
+            position: absolute;
+            animation-name: dog;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-duration: 12s;
+            top:3500px
+              
+        }
+        .butterfly{
+            background-repeat: no-repeat;
+            position: absolute;
+            animation-name: fly;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+        }
+        @keyframes birds {
+            0% {
+                left: 0%;
+           
+            }
+            25% {
+                left: 95%; 
+              
+            }
+            50% {
+
+                transform: rotate3d(0, 1, 0, 180deg);
+            }
+            75% {
+                left: -90px; 
+                           }
+            100% {
+                left: -200px; 
+            
+            }
+            
+        }
+        @keyframes fly {
+            0%{
+                 top : 3500px;
+                 transform: rotate(60deg);
+                }
+            25%{
+                left: 700px;
+                 transform: rotate(90deg);
+            
+            }
+            50%{
+                top: 4000px;
+                left: 700px;
+                transform: rotate(180deg);
+            }
+            75%{
+                top: 3500px;
+                
+                transform: rotate(240deg);
+            }
+            100%{
+                top: 3500px;
+                transform: rotate(360deg);
+            }
+            
+        }
+        @keyframes dog {
+            0% {
+                left: 0%;
+           
+            }
+            25% {
+                left: 100%; 
+              
+            }
+            50% {
+
+                transform: rotate3d(0, 1, 0, 180deg);
+            }
+            75% {
+                left: -100px; 
+                           }
+            100% {
+                left: -200px; 
+            
+            }
+            
+        }
+    </style>    
+</head>
+<body>
+<div class="background">
+    <div class="birds"><img src="bird.gif" alt="" height="700px" width="700px"></div>
+    <div class="birds1"><img src="bird.gif" alt="" height="700px" width="700px"></div>
+    <div class="birds2"><img src="bird.gif" alt="" height="700px" width="700px"></div>
+    <div class="dog"><img src="dog.gif" alt=""></div>
+    <div class="butterfly"><img src="butterfly.gif" alt=""></div>
+</div>    
+
+
+</body>
+</html>
